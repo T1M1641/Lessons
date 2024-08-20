@@ -48,7 +48,7 @@
         <?php foreach ($books as $book): ?>
             <li>
                 <a href="<?= $book['purchaseUrl'] ?>">
-                    <?= $book['author'] . ": " . $book['name'] . ", " . $book['releaseYear']?>
+                    <?= "{$book['author']}: {$book['name']}, {$book['releaseYear']}"?>
                 </a>
             </li>
         <?php endforeach; ?>
