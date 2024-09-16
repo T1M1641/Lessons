@@ -8,6 +8,7 @@ $db = new Database($config['database']);
 $heading = 'Create Note';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
     $errors = [];
 
     if (!Validator::string($_POST['body'], 1, 1000)) {
